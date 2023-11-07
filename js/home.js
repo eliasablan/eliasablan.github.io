@@ -48,16 +48,16 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-const setHeight = () => {
-  const currentHeight = window.innerHeight;
-  const elementsId = [
-    'particles-js',
-    'content',
-  ]
-  elementsId.forEach((element) => {
-    const elementById = document.getElementById(element);
-    elementById.style.height = `${currentHeight}px`;
-  });
-}
-window.addEventListener("resize", setHeight);
-setHeight();
+// const setHeight = () => {
+//   const currentHeight = window.innerHeight;
+//   const elementsId = [
+//     'particles-js',
+//     'content',
+//   ]
+//   elementsId.forEach((element) => {
+//     const elementById = document.getElementById(element);
+//     elementById.style.height = `${currentHeight}px`;
+//   });
+// }
+// window.addEventListener("resize", setHeight);
+// setHeight();
