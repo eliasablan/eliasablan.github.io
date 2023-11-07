@@ -39,7 +39,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--blue-chill-950);
   background-image: url("");
   background-repeat: no-repeat;

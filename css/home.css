@@ -2,7 +2,7 @@
   position: relative;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   pointer-events: none;
   display: flex;
   justify-content: center;
@@ -37,4 +37,9 @@ p {
 
 a {
   color: #FFFBFF;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #E65F5C;
 }
