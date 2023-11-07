@@ -1,0 +1,51 @@
+
+/* ---- reset ---- */
+body {
+  margin: 0 auto;
+  font-family: 'Geist', monospace;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1b0507;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#content {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+h1 {
+  color: #FBFEF9;
+  margin: 0;
+  padding: 10px 0;
+}
+
+h2 {
+  color: #A63446;
+  margin: 0;
+  padding: 10px 0;
+}
