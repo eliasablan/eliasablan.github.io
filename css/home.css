@@ -1,8 +1,30 @@
+:root {
+  --blue-chill-50: #f2f9f9;
+  --blue-chill-100: #ddeff0;
+  --blue-chill-200: #bfe0e2;
+  --blue-chill-300: #92cace;
+  --blue-chill-400: #5faab1;
+  --blue-chill-500: #438e96;
+  --blue-chill-600: #3b757f;
+  --blue-chill-700: #356169;
+  --blue-chill-800: #325158;
+  --blue-chill-900: #2d464c;
+  --blue-chill-950: #1a2c32;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url("Geist/Geist-Regular.woff2");
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url("Geist Mono/GeistMono-Regular.woff2");
+}
 
 /* ---- reset ---- */
 body {
   margin: 0 auto;
-  font-family: 'Geist', monospace;
   position: absolute;
   width: 100vw;
   height: 100dvh;
@@ -18,7 +40,7 @@ canvas {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: #1b0507;
+  background-color: var(--blue-chill-950);
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,13 +61,17 @@ canvas {
 }
 
 h1 {
-  color: #FBFEF9;
+  font-family: 'Geist';
+  font-size: 50px;
+  color: #FFFBFF;
   margin: 0;
   padding: 10px 0;
 }
 
 h2 {
-  color: #A63446;
+  font-family: 'Geist Mono';
+  font-size: 30px;
+  color: #F1DABF;
   margin: 0;
   padding: 10px 0;
 }
