@@ -3,3 +3,7 @@
   top: 0;
   padding: 2em;
 }
+svg {
+  width: 2em;
+  height: 2em;
+}

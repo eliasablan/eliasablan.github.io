@@ -19,13 +19,19 @@ h1 {
   text-align: center;
 }
 
-h2 {
+#typed {
   font-family: 'Geist Mono';
   font-size: 25px;
   color: #F1DABF;
   margin: 0;
   padding: 5px;
   text-align: center;
+}
+
+.typed-cursor {
+  font-family: 'Geist Mono';
+  font-size: 25px;
+  color: #F1DABF;
 }
 
 p {
