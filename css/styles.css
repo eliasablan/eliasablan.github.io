@@ -1,0 +1,89 @@
+:root {
+  --blue-chill-50: #f2f9f9;
+  --blue-chill-100: #ddeff0;
+  --blue-chill-200: #bfe0e2;
+  --blue-chill-300: #92cace;
+  --blue-chill-400: #5faab1;
+  --blue-chill-500: #438e96;
+  --blue-chill-600: #3b757f;
+  --blue-chill-700: #356169;
+  --blue-chill-800: #325158;
+  --blue-chill-900: #2d464c;
+  --blue-chill-950: #1a2c32;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url("Geist/Geist-Regular.woff2");
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url("Geist Mono/GeistMono-Regular.woff2");
+}
+
+/* ---- reset ---- */
+body {
+  margin: 0 auto;
+  position: absolute;
+  width: 100vw;
+  height: 100dvh;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--blue-chill-950);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#content {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Geist';
+  font-size: 35px;
+  color: #FFFBFF;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Geist Mono';
+  font-size: 25px;
+  color: #F1DABF;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  font-family: 'Geist Mono';
+  padding: 0 5px;
+  pointer-events: all;
+}
+
+a {
+  color: #FFFBFF;
+}
