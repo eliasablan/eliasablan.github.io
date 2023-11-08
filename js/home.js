@@ -1,3 +1,4 @@
+// Particles background
 particlesJS("particles-js", {
   particles: {
     number: { value: 350, density: { enable: true, value_area: 500 } },
@@ -48,6 +49,45 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-var typed = new Typed('#typed', {
+// Typed effect
+const typed = new Typed('#typed', {
   stringsElement: '#typed-strings'
+});
+
+// Move through the website with keyboard
+const ordered = [
+  {
+    name: 'landing',
+    ArrowDown: 'bio'
+  },
+  {
+    name: 'bio',
+    ArrowUp: 'landing',
+    ArrowDown: 'projects'
+  },
+  {
+    name: 'projects',
+    ArrowUp: 'bio',
+    ArrowDown: 'contact'
+  },
+  {
+    name: 'contact',
+    ArrowUp: 'projects'
+  }
+]
+
+document.addEventListener('keydown', function (event) {
+  // Check if the key pressed is the up arrow key or the down arrow key
+  if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+    event.preventDefault(); // Prevent the default behavior of arrow keys (e.g., scrolling the page)
+    
+    // Get the current section
+    let currentSection = document.querySelector('.section:target') || document.querySelector('.section');
+    
+    const currentOrdered = ordered.find((section) => section.name == currentSection.id);
+
+    if (!!currentOrdered[event.key]){
+      document.location.hash = currentOrdered[event.key]
+    }
+  }
 });
