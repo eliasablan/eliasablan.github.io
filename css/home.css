@@ -57,7 +57,7 @@ p {
   font-family: 'Geist Mono', monospace;
 }
 
-h1:hover, h2:hover, h3:hover, p:hover  {
+h1:hover, h2:hover, h3:hover, p:hover, a:hover  {
   color: #E65F5C;
 }
 
