@@ -1,4 +1,4 @@
-// Particles background
+// ********** Particles background **********
 particlesJS("particles-js", {
   particles: {
     number: { value: 350, density: { enable: true, value_area: 500 } },
@@ -49,12 +49,16 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-// Typed effect
+
+
+// ********** Typed effect **********
 const typed = new Typed('#typed', {
   stringsElement: '#typed-strings'
 });
 
-// Move through the website with keyboard
+
+
+// ********** Desplazo con flechas arriba/abajo **********
 const ordered = [
   {
     name: 'landing',
@@ -91,3 +95,94 @@ document.addEventListener('keydown', function (event) {
     }
   }
 });
+
+
+
+// ********** Actualiza URL con scroll **********
+// Obtiene todos los elementos con ID que deseas observar
+const sectionsToObserve = document.querySelectorAll('.section');
+
+// Callback para la función de Intersection Observer
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Obtén el ID del elemento que está en la parte superior de la pantalla
+      const id = entry.target.id;
+      
+      // Actualiza la URL añadiendo el ID al final
+      history.replaceState({}, '', `#${id}`);
+    }
+  });
+}
+
+// Configura el Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, {
+  root: null, // Observa el viewport
+  rootMargin: '0px',
+  threshold: 0.5, // Cuando el elemento está al 50% o más visible
+});
+
+// Observa los elementos
+sectionsToObserve.forEach((section) => {
+  observer.observe(section);
+});
+
+
+
+// ********** Intento de Animaciones **********
+// const orderedSections = [
+//   {
+//     name: 'landing',
+//     ArrowDown: 'bio'
+//   },
+//   {
+//     name: 'bio',
+//     ArrowUp: 'landing',
+//     ArrowDown: 'projects'
+//   },
+//   {
+//     name: 'projects',
+//     ArrowUp: 'bio',
+//     ArrowDown: 'contact'
+//   },
+//   {
+//     name: 'contact',
+//     ArrowUp: 'projects'
+//   }
+// ]
+
+// // Define a function to handle the animations
+// function handleAnimations(targetSection) {
+//   // Remove the animation class from all sections
+//   const allSections = document.querySelectorAll('.section');
+//   allSections.forEach((section) => {
+//     // console.log("removed", section.id)
+//     section.style.animation = "";
+//   });
+  
+//   console.log("added", targetSection.id)
+//   targetSection.style.animation = "1s fadeInDown";
+// }
+
+// // Initialize the Intersection Observer
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       const currentSection = entry.target;
+//       const orderedSection = orderedSections.find((section) => section.name == currentSection.id);
+
+//       if (orderedSection) {
+//         handleAnimations(currentSection);
+
+//         // Scroll to the target section
+//         document.location.hash = orderedSection['ArrowDown'];
+//       }
+//     }
+//   });
+// });
+
+// // Observe all sections
+// const allSections = document.querySelectorAll('.section');
+// allSections.forEach((section) => {
+//   observer.observe(section);
+// });

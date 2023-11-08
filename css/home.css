@@ -47,23 +47,34 @@ body::-webkit-scrollbar {
   background-color: var(--blue-chill-950);
 }
 
-h1, h2, h3, p {
+h1, h3 {
   font-family: 'Geist', sans-serif;
   color: #FFFBFF;
-  transition: 0.25s;
 }
 
-p, h2 {
+p, span {
   font-family: 'Geist Mono', monospace;
+  color: #FFFBFF;
 }
 
-h1:hover, h2:hover, h3:hover, p:hover, a:hover  {
-  color: #E65F5C;
-}
-
-#typed, .typed-cursor {
-  font-family: 'Geist Mono';
+h2 {
+  font-family: 'Geist Mono', monospace;
   color: #F1DABF;
+}
+
+a {
+  font-family: 'Geist Mono', monospace !important;
+  color: #FFFBFF !important;
+  transition: 0.25s !important;
+}
+
+a:hover  {
+  color: #E65F5C !important;
+}
+
+#landing span {
+  color: #F1DABF;
+
 }
 
 input,
@@ -72,4 +83,68 @@ button,
 select,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Contact Form */
+.form_content {
+  animation: 1s fadeInDown;
+}
+
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  border-radius: 5px;
+  width: 60%;
+  font-family: 'GeistMono', monospace;
+  padding: 12px 20px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+textarea {
+  border-radius: 5px;
+  width: 60%;
+  height: 10em;
+  font-family: 'GeistMono', monospace;
+  padding: 12px 20px !important;
+  margin: 10px auto !important;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: 'Geist Mono', monospace;
+  color: #1A2C32;
+}
+
+button {
+  border-radius: 5px;
+  font-family: 'Geist Mono', monospace !important;
+  transition: 0.25s !important;
+}
+
+button:hover {
+  background: rgba(250, 250, 250, 0.3);
+}
+
+
+
+/* ---- animations attempt ---- */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
