@@ -47,12 +47,14 @@ body::-webkit-scrollbar {
   background-color: var(--blue-chill-950);
 }
 
-h1, h3 {
+h1,
+h3 {
   font-family: 'Geist', sans-serif;
   color: #FFFBFF;
 }
 
-p, span {
+p,
+span {
   font-family: 'Geist Mono', monospace;
   color: #FFFBFF;
 }
@@ -68,7 +70,7 @@ a {
   transition: 0.25s !important;
 }
 
-a:hover  {
+a:hover {
   color: #E65F5C !important;
 }
 
@@ -80,7 +82,6 @@ a:hover  {
 .form_content {
   animation: 1s fadeInDown;
 }
-
 
 label {
   margin-bottom: 10px;
@@ -114,7 +115,8 @@ label {
   margin: 0px auto !important;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-family: 'Geist Mono', monospace;
   color: #1A2C32;
 }
@@ -124,8 +126,6 @@ button {
   font-family: 'Geist Mono', monospace !important;
   transition: 0.25s !important;
 }
-
-
 
 /* ---- animations attempt ---- */
 @keyframes fadeInDown {
