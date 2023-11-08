@@ -53,7 +53,7 @@ h1, h2, h3, p {
   transition: 0.25s;
 }
 
-p {
+p, h2 {
   font-family: 'Geist Mono', monospace;
 }
 
