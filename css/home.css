@@ -30,6 +30,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+#content {
+  -ms-overflow-style: none;
+  user-select: none;
+}
+
+#content::-webkit-scrollbar {
+  display: none;
+}
+
 /* ---- particles.js container ---- */
 #particles-js {
   position: fixed;
