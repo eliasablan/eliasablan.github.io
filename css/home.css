@@ -65,3 +65,11 @@ h1:hover, h2:hover, h3:hover, p:hover  {
   font-family: 'Geist Mono';
   color: #F1DABF;
 }
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
