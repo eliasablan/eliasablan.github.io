@@ -74,15 +74,6 @@ a:hover  {
 
 #landing span {
   color: #F1DABF;
-
-}
-
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: transparent;
 }
 
 /* Contact Form */
@@ -100,7 +91,7 @@ input[type="email"] {
   border-radius: 5px;
   width: 60%;
   font-family: 'GeistMono', monospace;
-  padding: 12px 20px;
+  padding: 8px 16px;
   margin: 10px;
   background: rgba(255, 255, 255, 0.15);
   color: white;
@@ -111,10 +102,16 @@ textarea {
   width: 60%;
   height: 10em;
   font-family: 'GeistMono', monospace;
-  padding: 12px 20px !important;
+  padding: 8px 16px !important;
   margin: 10px auto !important;
   background: rgba(255, 255, 255, 0.15);
-  color: white;
+  color: white !important;
+}
+
+label {
+  width: 60%;
+  padding: 0px 16px !important;
+  margin: 0px auto !important;
 }
 
 input::placeholder, textarea::placeholder {
@@ -126,10 +123,6 @@ button {
   border-radius: 5px;
   font-family: 'Geist Mono', monospace !important;
   transition: 0.25s !important;
-}
-
-button:hover {
-  background: rgba(250, 250, 250, 0.3);
 }
 
 
