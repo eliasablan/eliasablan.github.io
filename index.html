@@ -17,31 +17,32 @@
   <div id="particles-js"></div>
 
   <div id="content"
-    class="snap-y snap-mandatory h-[100dvh]  overflow-scroll scroll-smooth relative pointer-events-none">
+    class="snap-y snap-mandatory h-[100dvh]  overflow-scroll scroll-smooth relative md:pointer-events-none">
     <!-- Landing -->
     <div id="landing" class="section snap-center h-[100dvh] w-screen flex flex-col justify-center items-center">
-      <svg class="h-8 mb-12" fill="none" stroke="#F1DABF" stroke-width="1.5" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-10 text-[#F1DABF]">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
       </svg>
-      <h1 class="text-4xl p-1">Elias Ablan</h1>
-      <div class="text-2xl py-1">
+      <h1 class="text-3xl p-2">Elias Ablan</h1>
+      <div class="text-xl py-1">
         <div id="typed-strings" style="span {color: #F1DABF}">
           <h2>Full Stack Developer</h2>
         </div>
         <span id="typed"></span>
       </div>
       <div class="pt-2">
-        <p class="pointer-events-auto inline text-md underline px-1"><a href="#bio">bio</a></p>
-        <p class="pointer-events-auto inline text-md underline px-1"><a href="#projects">projects</a></p>
-        <p class="pointer-events-auto inline text-md underline px-1"><a href="#contact">contact</a></p>
+        <p class="pointer-events-auto inline text-sm underline px-1"><a href="#bio">bio</a></p>
+        <p class="pointer-events-auto inline text-sm underline px-1"><a href="#projects">projects</a></p>
+        <p class="pointer-events-auto inline text-sm underline px-1"><a href="#contact">contact</a></p>
       </div>
       <a class="pointer-events-auto w-48 flex justify-center" href="#bio">
-        <svg class="h-8 mt-14" fill="none" stroke="#F1DABF" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-        </svg>
-
+        <a class="pointer-events-auto w-48 flex justify-center" href="#contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-12 text-[#F1DABF] hover:text-[#E65F5C]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+          </svg>
+        </a>
       </a>
     </div>
 
@@ -49,41 +50,43 @@
     <div id="bio" class="section snap-center h-[100dvh] w-screen flex flex-col justify-between items-center">
       <!-- Scroll to Landing -->
       <a class="pointer-events-auto w-48 flex justify-center" href="#landing">
-        <svg class="h-8 mt-10" fill="none" stroke="#F1DABF" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-10 text-[#F1DABF] hover:text-[#E65F5C]">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
         </svg>
       </a>
       <div class="pointer-events-auto">
-        <h2 class="text-2xl mb-4">bio</h2>
-        <p>Looking for new challenges 💪</p>
-        <p>...and maybe a job 🙏</p>
-        <p class="mt-10">You can always donate of course 💸</p>
-        <a class="underline" href="#">
+        <h2 class="text-lg mb-4">bio</h2>
+        <p class="text-sm">Looking for new challenges 💪</p>
+        <p class="text-sm">...and maybe a job 🙏</p>
+        <p class="text-sm mt-5">You can always donate of course 💸</p>
+        <a class="text-sm underline" href="#">
           here
         </a>
       </div>
       <!-- Scroll to Projects -->
       <a class="pointer-events-auto w-48 flex justify-center" href="#projects">
-        <svg class="h-8 mb-10" fill="none" stroke="#F1DABF" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-        </svg>
+        <a class="pointer-events-auto w-48 flex justify-center" href="#contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-10 text-[#F1DABF] hover:text-[#E65F5C]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+          </svg>
+        </a>
       </a>
     </div>
 
     <!-- Projects -->
-    <div id="projects" class="section snap-center h-[100dvh] w-screen flex flex-col justify-between items-center">
+    <div id="projects" class="section snap-center h-[100dvh] w-screen flex flex-col justify-between items-center align-middle	">
       <!-- Scroll to Bio -->
       <a class="pointer-events-auto w-48 flex justify-center" href="#bio">
-        <svg class="h-8 mt-10" fill="none" stroke="#F1DABF" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-10 text-[#F1DABF] hover:text-[#E65F5C]">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
         </svg>
       </a>
 
       <div class="w-[90vw] md:w-[60vw]">
-        <h2 class="text-xl mb-4">projects</h2>
+        <h2 class="text-lg mb-4">projects</h2>
         <div class="grid gap-6">
           
           <div>
@@ -109,12 +112,10 @@
                   </g>
                 </svg>
               </a>
-              <a href="#" class="pointer-events-auto text-base underline text-white">Project 1</a>
+              <a href="#" class="pointer-events-auto text-sm underline text-white">Project 1</a>
             </div>
-            <p class="text-base text-gray-400">Thisis a description of Project 1is a description of Project 1is a
-              description of Project 1is a description of Project 1is a description of Project 1is a description of
-              Project 1is a description of Project 1is a description of Project 1is a description of Project 1is a
-              description of Project 1is a description of Project 1.</p>
+            <p class="text-sm text-gray-400">This is a description of Project 1 is a description of Project 1 is a
+              description of Project 1.</p>
           </div>
           <div>
             <div>
@@ -139,9 +140,9 @@
                   </g>
                 </svg>
               </a>
-              <a href="#" class="pointer-events-auto text-base underline text-white">Project 2</a>
+              <a href="#" class="pointer-events-auto text-sm underline text-white">Project 2</a>
             </div>
-            <p class="text-base text-gray-400">This is a description of Project 2.</p>
+            <p class="text-sm text-gray-400">This is a description of Project 2.</p>
           </div>
           <div>
             <div>
@@ -166,25 +167,26 @@
                   </g>
                 </svg>
               </a>
-              <a href="#" class="pointer-events-auto text-base underline text-white">Project 3</a>
+              <a href="#" class="pointer-events-auto text-sm underline text-white">Project 3</a>
             </div>
-            <p class="text-base text-gray-400">This is a description of Project 3.</p>
+            <p class="text-sm text-gray-400">This is a description of Project 3.</p>
           </div>
           <div>
-            <a href="#" class="pointer-events-auto text-base underline text-white">Project 4</a>
-            <p class="text-base text-gray-400">This is a description of Project 4.</p>
+            <a href="#" class="pointer-events-auto text-sm underline text-white">Project 4</a>
+            <p class="text-sm text-gray-400">This is a description of Project 4 is a description of Project 4 is a
+            description of Project 4.</p>
           </div>
           <div>
-            <a href="#" class="pointer-events-auto text-base underline text-white ">Project 5</a>
-            <p class="text-base text-gray-400 ">This is a description of Project 5.</p>
+            <a href="#" class="pointer-events-auto text-sm underline text-white ">Project 5</a>
+            <p class="text-sm text-gray-400 ">This is a description of Project 5.</p>
           </div>
         </div>
       </div>
 
       <!-- Scroll to Contact -->
       <a class="pointer-events-auto w-48 flex justify-center" href="#contact">
-        <svg class="h-8 mb-10" fill="none" stroke="#F1DABF" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-10 text-[#F1DABF] hover:text-[#E65F5C]">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
         </svg>
       </a>
@@ -194,35 +196,35 @@
     <div id="contact" class="section snap-center h-[100dvh] w-screen flex flex-col justify-between items-center">
       <!-- Scroll to Bio -->
       <a class="pointer-events-auto w-48 flex justify-center" href="#projects">
-        <svg class="h-8 mt-10" fill="none" stroke="#F1DABF" stroke-width="1.5" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-10 text-[#F1DABF] hover:text-[#E65F5C]">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
         </svg>
       </a>
 
-      <div class="w-[90vw] md:w-[60vw] pointer-events-auto rounded-xl text-center">
-        <h2 class="text-xl mb-4">leave a message</h2>
-          <label class="text-base block text-left" for="uname2">
+      <div class="w-[85vw] md:w-[60vw] pointer-events-auto">
+        <h2 class="text-lg mb-4">leave a message</h2>
+          <label class="text-sm block text-left" for="uname">
             <p>name</p>
           </label>
-          <input class="text-base focus:outline-none focus:ring focus:border-blue-500/50 caret-blue-500/50" type="text"
-            placeholder="Type your name..." name="uname2" id="uname2" required>
+          <input class="text-sm focus:outline-none focus:ring focus:border-blue-500/50 caret-blue-500/50" type="text"
+            placeholder="Type your name..." name="uname" id="uname" required>
 
-          <label class="text-base block text-left" for="email2">
+          <label class="text-sm block text-left" for="email">
             <p>email</p>
           </label>
-          <input class="text-base focus:outline-none focus:ring focus:border-blue-500/50 caret-blue-500/50" type="email"
-            placeholder="Provide an email..." name="email2" id="email2" required>
+          <input class="text-sm focus:outline-none focus:ring focus:border-blue-500/50 caret-blue-500/50" type="email"
+            placeholder="Provide an email..." name="email" id="email" required>
 
-          <label class="text-base block text-left" for="message2">
+          <label class="text-sm block text-left" for="message">
             <p>message</p>
           </label>
-          <textarea class="text-base block focus:outline-none focus:ring focus:border-blue-500/50 caret-blue-500/50"
-            placeholder="What do you wanna tell me..." name="message2" id="message2" required></textarea>
+          <textarea class="text-sm block focus:outline-none focus:ring focus:border-blue-500/50 caret-blue-500/50"
+            placeholder="And write your message..." name="message" id="message" required></textarea>
 
           <div class="block text-center">
             <button
-              class="inline text-base focus:outline-none focus:ring focus:border-blue-500/50 text-white py-2 px-7 mt-5 border-2 border-gray-500/50 hover:border-[#E65F5C] hover:bg-[#E65F5C]"
+              class="inline text-sm focus:outline-none focus:ring focus:border-blue-500/50 text-white py-2 px-7 border-2 border-gray-500/50 hover:border-[#E65F5C] hover:bg-[#E65F5C]"
               type="submit">Send</button>
           </div>
 
@@ -230,7 +232,7 @@
       </div>
       <!-- Social Media -->
       <div class="block flex mb-10">
-        <a class="inline pointer-events-auto w-48 flex justify-center" href="github.com">
+        <a class="inline pointer-events-auto w-16 flex justify-center" href="github.com">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="text-[#F1DABF] hover:text-[#E65F5C]">
@@ -240,7 +242,7 @@
             <path d="M9 18c-4.51 2-5-2-7-2"></path>
           </svg>
         </a>
-        <a class="inline pointer-events-auto w-48 flex justify-center" href="linkedin.com">
+        <a class="inline pointer-events-auto w-16 flex justify-center" href="linkedin.com">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="text-[#F1DABF] hover:text-[#E65F5C]">
@@ -249,7 +251,7 @@
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </a>
-        <a class="inline pointer-events-auto w-48 flex justify-center" href="twitter.com">
+        <a class="inline pointer-events-auto w-16 flex justify-center" href="twitter.com">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="text-[#F1DABF] hover:text-[#E65F5C]">
