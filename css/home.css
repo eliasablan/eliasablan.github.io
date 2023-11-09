@@ -91,7 +91,7 @@ input[type="text"],
 input[type="email"] {
   width: 100%;
   border-radius: 5px;
-  font-family: 'GeistMono', monospace;
+  font-family: 'Geist Mono', monospace;
   padding: 8px 16px;
   background: rgba(255, 255, 255, 0.15);
   color: #FFFBFF;
@@ -101,7 +101,7 @@ textarea {
   width: 100%;
   height: 10em;
   border-radius: 5px;
-  font-family: 'GeistMono', monospace;
+  font-family: 'Geist Mono', monospace;
   padding: 8px 16px !important;
   background: rgba(255, 255, 255, 0.15);
   color: #FFFBFF !important;
@@ -116,7 +116,7 @@ label {
 
 input::placeholder,
 textarea::placeholder {
-  font-family: 'GeistMono', monospace;
+  font-family: 'Geist Mono', monospace;
   color: #1A2C32;
 }
 
