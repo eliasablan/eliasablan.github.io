@@ -83,6 +83,10 @@ a:hover {
   animation: 1s fadeInDown;
 }
 
+.pointer-events-auto {
+  /* border: 1px solid red !important; */
+}
+
 input[type="text"],
 input[type="email"] {
   width: 100%;
