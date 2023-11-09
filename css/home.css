@@ -112,7 +112,7 @@ label {
 
 input::placeholder,
 textarea::placeholder {
-  font-family: 'Geist Mono', monospace;
+  font-family: 'GeistMono', monospace;
   color: #1A2C32;
 }
 
