@@ -13,12 +13,12 @@
 }
 
 @font-face {
-  font-family: 'Geist';
+  font-family: "Geist";
   src: url("Geist/Geist-Regular.woff2");
 }
 
 @font-face {
-  font-family: 'Geist Mono';
+  font-family: "Geist Mono";
   src: url("Geist Mono/GeistMono-Regular.woff2");
 }
 
@@ -49,33 +49,33 @@ body::-webkit-scrollbar {
 
 h1,
 h3 {
-  font-family: 'Geist', sans-serif;
-  color: #FFFBFF;
+  font-family: "Geist", sans-serif;
+  color: #fffbff;
 }
 
 p,
 span {
-  font-family: 'Geist Mono', monospace;
-  color: #FFFBFF;
+  font-family: "Geist Mono", monospace;
+  color: #fffbff;
 }
 
 h2 {
-  font-family: 'Geist Mono', monospace;
-  color: #F1DABF;
+  font-family: "Geist Mono", monospace;
+  color: #f1dabf;
 }
 
 a {
-  font-family: 'Geist Mono', monospace !important;
-  color: #FFFBFF !important;
+  font-family: "Geist Mono", monospace !important;
+  color: #fffbff !important;
   transition: 0.25s !important;
 }
 
 a:hover {
-  color: #E65F5C !important;
+  color: #e65f5c !important;
 }
 
 #landing span {
-  color: #F1DABF;
+  color: #f1dabf;
 }
 
 /* Contact Form */
@@ -91,24 +91,24 @@ input[type="text"],
 input[type="email"] {
   width: 100%;
   border-radius: 5px;
-  font-family: 'Geist Mono', monospace;
+  font-family: "Geist Mono", monospace;
   padding: 8px 16px;
   background: rgba(255, 255, 255, 0.15);
-  color: #FFFBFF;
+  color: #fffbff;
 }
 
 textarea {
   width: 100%;
   height: 10em;
   border-radius: 5px;
-  font-family: 'Geist Mono', monospace !important;
+  font-family: "Geist Mono", monospace !important;
   padding: 8px 16px !important;
   background: rgba(255, 255, 255, 0.15);
-  color: #FFFBFF !important;
+  color: #fffbff !important;
 }
 
 label {
-  color: #FFFBFF;
+  color: #fffbff;
   width: 100%;
   padding: 10px 16px !important;
   margin: 0px auto !important;
@@ -116,14 +116,14 @@ label {
 
 input::placeholder,
 textarea::placeholder {
-  font-family: 'Geist Mono', monospace;
-  color: #1A2C32;
+  font-family: "Geist Mono", monospace;
+  color: #1a2c32;
 }
 
 button {
   border-radius: 5px;
   margin-top: 20px !important;
-  font-family: 'Geist Mono', monospace !important;
+  font-family: "Geist Mono", monospace !important;
   transition: 0.25s !important;
 }
 
