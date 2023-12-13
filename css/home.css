@@ -55,7 +55,7 @@ h3 {
 
 p,
 span {
-  font-family: "Geist Mono", monospace;
+  font-family: "Geist Mono", monospace !important;
   color: #fffbff;
 }
 
